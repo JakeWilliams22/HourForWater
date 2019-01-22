@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.landing-image {
+  background-image: url('car1.jpg') !important;
+  background-size: cover !important;
+  min-height: 700px;
+  padding: '1em 0em';
+  color:#303030;
+}

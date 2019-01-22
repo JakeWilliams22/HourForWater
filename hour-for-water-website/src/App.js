@@ -15,6 +15,8 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import logo from './logo.svg'
+
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -30,10 +32,10 @@ const getWidth = () => {
  * such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container text fluid>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='Hour for Water'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -44,7 +46,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content="No matter what you're working on this Summer, it can mean something."
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -85,31 +87,26 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
+            className="landing-image"
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
           >
             <Menu
+              borderless
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
-              pointing={!fixed}
               secondary={!fixed}
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'>What We're Doing</Menu.Item>
+                <Menu.Item as='a'>Our Impact</Menu.Item>
+                <Menu.Item as='a'>Motivation</Menu.Item>
+                <Menu.Item as='a'>Values</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Join
                   </Button>
                 </Menu.Item>
               </Container>
@@ -156,11 +153,11 @@ class MobileContainer extends Component {
           <Menu.Item as='a' active>
             Home
           </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item as='a'>What We're Doing</Menu.Item>
+          <Menu.Item as='a'>Our Impact</Menu.Item>
+          <Menu.Item as='a'>Motivation</Menu.Item>
+          <Menu.Item as='a'>Values</Menu.Item>
+          <Menu.Item as='a'>Join</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -177,10 +174,7 @@ class MobileContainer extends Component {
                 </Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Join
                   </Button>
                 </Menu.Item>
               </Menu>
