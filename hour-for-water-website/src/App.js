@@ -15,7 +15,6 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import logo from './logo.svg'
 
 
 // Heads up!
@@ -32,7 +31,7 @@ const getWidth = () => {
  * such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text fluid>
+  <Container text>
     <Header
       as='h1'
       content='Hour for Water'
@@ -89,7 +88,6 @@ class DesktopContainer extends Component {
           <Segment
             className="landing-image"
             inverted
-            textAlign='center'
             vertical
           >
             <Menu
