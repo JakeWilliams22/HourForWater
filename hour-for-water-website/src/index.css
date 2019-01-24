@@ -20,3 +20,8 @@ code {
   padding: '1em 0em';
   color:#303030;
 }
+
+.pane1-text {
+  color:black;
+  font-size: 1.33em; 
+}

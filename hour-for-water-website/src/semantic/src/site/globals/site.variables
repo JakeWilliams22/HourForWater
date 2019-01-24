@@ -1,4 +1,6 @@
 /*******************************
      User Global Variables
 *******************************/
-@primaryColor   : @pink;
+@primaryColor   : @blue;
+@blue          : #25B5F4;
+@orange        : #F9C468;
