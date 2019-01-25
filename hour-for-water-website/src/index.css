@@ -21,7 +21,16 @@ code {
   color:#303030;
 }
 
+.pane0 {
+  color:#2A44F3;
+}
+
 .pane1-text {
   color:black;
   font-size: 1.33em; 
+}
+
+.pane3 {
+  background-image: url('rwanda2.jpg') !important;
+  background-size: cover !important;
 }

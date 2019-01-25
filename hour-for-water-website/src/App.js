@@ -204,7 +204,15 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment color='orange' inverted className="pane1" style={{ padding: '8em 0em' }} vertical>
+    <Segment className='pane0' style={{ padding: '4em 0em' }} vertical>
+      <Container text>
+        <p style={{ textAlign:'center', fontSize: '1.33em' }}>
+          Join us this Summer to give clean water to those without it. For them, water means <b>health</b>; water means <b>education</b>; and water means <b>economic empowerment</b>. Software interns across the country are giving an hour of their time this Summer to bring clean water to those without it. 
+        </p>
+      </Container>
+    </Segment>
+  
+    <Segment className='pane1' color='blue' inverted style={{ padding: '4em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -234,7 +242,7 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em' }} vertical>
+    <Segment className='pane2' style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -255,7 +263,7 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment className='pane3' style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
           Breaking The Grid, Grabs Your Attention
@@ -269,15 +277,6 @@ const HomepageLayout = () => (
           Read More
         </Button>
 
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Case Studies</a>
-        </Divider>
-
         <Header as='h3' style={{ fontSize: '2em' }}>
           Did We Tell You About Our Bananas?
         </Header>
@@ -286,13 +285,10 @@ const HomepageLayout = () => (
           it's really true. It took years of gene splicing and combinatory DNA research, but our
           bananas can really dance.
         </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
       </Container>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    <Segment className='pane4' inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
