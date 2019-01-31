@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
   Button,
+  Card,
   Container,
   Divider,
   Grid,
@@ -204,7 +205,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment className='pane0' style={{ padding: '4em 0em' }} vertical>
+    <Segment basic className='pane0' style={{ padding: '4em 0em' }} vertical>
       <Container text>
         <p style={{ textAlign:'center', fontSize: '1.33em' }}>
           Join us this Summer to give clean water to those without it. For them, water means <b>health</b>; water means <b>education</b>; and water means <b>economic empowerment</b>. Software interns across the country are giving an hour of their time this Summer to bring clean water to those without it. 
@@ -212,52 +213,51 @@ const HomepageLayout = () => (
       </Container>
     </Segment>
   
-    <Segment className='pane1' color='blue' inverted style={{ padding: '4em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
+    <Segment className='pane1' style={{ padding: '8em 0em' }} basic>
+      <Grid relaxed stackable >
         <Grid.Row>
-          <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Help Companies and Companions
-            </Header>
-            <p className='pane1-text'>
-              We can give your company superpowers to do things that they never thought possible.
-              Let us delight your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Make Bananas That Can Dance
-            </Header>
-            <p className='pane1-text'>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-              bioengineered.
-            </p>
+          <Grid.Column width={1}> </Grid.Column>
+          <Grid.Column className="firstCol" width={6}>
+            <Card fluid>
+              <Card.Content style={{backgroundColor: '#F9C468'}}>
+                <Header as='h3' style={{ fontSize: '2em' }}>
+                  "What a Company"
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  That is what they all say about us
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                </p>
+              </Card.Content>
+            </Card>
           </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-          </Grid.Column>
+          <Grid.Column width={8}> </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge' primary>Check Them Out</Button>
+          <Grid.Column width={1}> </Grid.Column>
+          <Grid.Column className="firstCol" width={6}>
+           <Card fluid>
+              <Card.Content style={{backgroundColor: '#F9C468'}}>
+                <Header as='h3' style={{ fontSize: '2em' }}>
+                  "What a Company"
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  That is what they all say about us
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                  We can give your company superpowers to do things that they never thought possible.
+                  Let us delight your customers and empower your needs... through pure data analytics.
+                </p>
+              </Card.Content>
+            </Card>
           </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-
-    <Segment className='pane2' style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+          <Grid.Column floated='right'>
           </Grid.Column>
         </Grid.Row>
       </Grid>

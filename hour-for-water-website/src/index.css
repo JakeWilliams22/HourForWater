@@ -25,12 +25,27 @@ code {
   color:#2A44F3;
 }
 
+.pane1 {
+  background-image: url('uganda6-cropped.jpg') !important;
+  background-size: cover !important;
+}
+
+.pane1 .card .content {
+  background-color:#F9C468;
+  color: black;
+  padding: 5em 5em;
+}
+
+.pane1 .column {
+  padding:'5em 5em';
+  text-align:center;
+}
+
 .pane1-text {
   color:black;
   font-size: 1.33em; 
 }
 
 .pane3 {
-  background-image: url('rwanda2.jpg') !important;
-  background-size: cover !important;
+
 }
